@@ -9,7 +9,7 @@ const socialLinks = [
   },
   {
     icon: Linkedin,
-    href: "https://www.linkedin.com/in/thaqib-rahman-3143ba268",
+    href: "https://www.linkedin.com/in/thaqibrahman",
     label: "LinkedIn",
   },
   {
