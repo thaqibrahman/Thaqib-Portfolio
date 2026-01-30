@@ -111,7 +111,7 @@ This project is licensed under the MIT License – feel free to use and modify i
 
 👤 Author
 
-Tahaz Rahman
+Mohammed Thaqib Ul Rahman
 
 GitHub: https://github.com/your-username
 
