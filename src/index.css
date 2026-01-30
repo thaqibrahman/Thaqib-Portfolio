@@ -1,0 +1,345 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI/ML Engineer Portfolio Design System - Dark Tech Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Dark Tech Color Palette */
+    --background: 220 20% 4%;
+    --foreground: 210 40% 96%;
+
+    --card: 220 20% 8%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 220 20% 6%;
+    --popover-foreground: 210 40% 96%;
+
+    /* Primary: Cyan Tech Accent */
+    --primary: 192 95% 55%;
+    --primary-foreground: 220 20% 4%;
+    --primary-glow: 192 100% 60%;
+
+    /* Secondary: Deep Navy */
+    --secondary: 220 30% 12%;
+    --secondary-foreground: 210 40% 90%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 215 20% 55%;
+
+    /* Accent: Purple for highlights */
+    --accent: 260 80% 65%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 12%;
+    --ring: 192 95% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom Portfolio Colors */
+    --cyan: 192 95% 55%;
+    --cyan-glow: 192 100% 70%;
+    --purple: 260 80% 65%;
+    --purple-glow: 260 100% 75%;
+    --gradient-start: 192 95% 55%;
+    --gradient-end: 260 80% 65%;
+    
+    /* Glass Effect */
+    --glass: 220 20% 10% / 0.6;
+    --glass-border: 220 20% 30% / 0.3;
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(192 95% 55% / 0.15);
+    --shadow-glow-intense: 0 0 60px hsl(192 95% 55% / 0.25);
+  }
+
+  .dark {
+    --background: 220 20% 4%;
+    --foreground: 210 40% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: linear-gradient(135deg, hsl(220 20% 4%) 0%, hsl(220 25% 6%) 50%, hsl(230 20% 5%) 100%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-primary/30 text-foreground;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply relative overflow-hidden rounded-xl;
+    background: linear-gradient(135deg, hsl(220 20% 10% / 0.8) 0%, hsl(220 20% 8% / 0.6) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(220 20% 25% / 0.3);
+    box-shadow: 
+      0 8px 32px hsl(0 0% 0% / 0.3),
+      inset 0 1px 0 hsl(220 20% 40% / 0.1);
+  }
+
+  .glass-card::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-500;
+    background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsl(192 95% 55% / 0.06), transparent 40%);
+  }
+
+  .glass-card:hover::before {
+    @apply opacity-100;
+  }
+
+  /* 3D Card Effect */
+  .card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .card-3d:hover {
+    transform: translateY(-8px) rotateX(5deg) rotateY(-5deg);
+  }
+
+  .card-3d-inner {
+    transform-style: preserve-3d;
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(192 95% 55%) 0%, hsl(260 80% 65%) 100%);
+  }
+
+  .gradient-text-cyan {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(192 95% 60%) 0%, hsl(192 100% 70%) 100%);
+  }
+
+  /* Glow Effects */
+  .glow-cyan {
+    box-shadow: 
+      0 0 20px hsl(192 95% 55% / 0.3),
+      0 0 40px hsl(192 95% 55% / 0.15),
+      0 0 60px hsl(192 95% 55% / 0.1);
+  }
+
+  .glow-text {
+    text-shadow: 
+      0 0 20px hsl(192 95% 55% / 0.5),
+      0 0 40px hsl(192 95% 55% / 0.3);
+  }
+
+  /* Animated Border Gradient */
+  .border-gradient {
+    @apply relative rounded-xl;
+  }
+
+  .border-gradient::before {
+    content: '';
+    @apply absolute -inset-[1px] rounded-xl -z-10;
+    background: linear-gradient(135deg, hsl(192 95% 55%) 0%, hsl(260 80% 65%) 50%, hsl(192 95% 55%) 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  /* Section Title */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-2 gradient-text;
+  }
+
+  .section-subtitle {
+    @apply text-muted-foreground text-lg mb-12;
+  }
+
+  /* Tech Badge */
+  .tech-badge {
+    @apply px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-300;
+    background: linear-gradient(135deg, hsl(220 20% 12%) 0%, hsl(220 20% 15%) 100%);
+    border: 1px solid hsl(220 20% 25% / 0.5);
+  }
+
+  .tech-badge:hover {
+    @apply border-primary/50;
+    box-shadow: 0 0 15px hsl(192 95% 55% / 0.2);
+  }
+
+  /* Timeline */
+  .timeline-line {
+    @apply absolute left-0 md:left-1/2 top-0 bottom-0 w-px;
+    background: linear-gradient(180deg, transparent 0%, hsl(192 95% 55% / 0.5) 10%, hsl(260 80% 65% / 0.5) 90%, transparent 100%);
+  }
+
+  .timeline-dot {
+    @apply w-4 h-4 rounded-full border-2 border-primary;
+    background: hsl(192 95% 55% / 0.3);
+    box-shadow: 0 0 15px hsl(192 95% 55% / 0.5);
+  }
+
+  /* Input Focus */
+  .input-glow:focus {
+    @apply ring-2 ring-primary/50 border-primary/50;
+    box-shadow: 0 0 20px hsl(192 95% 55% / 0.15);
+  }
+
+  /* Particle Grid Background */
+  .particle-grid {
+    background-image: 
+      radial-gradient(circle at 1px 1px, hsl(220 20% 20%) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+
+  /* Scroll Indicator */
+  .scroll-indicator {
+    @apply animate-bounce;
+  }
+
+  /* Social Icon */
+  .social-icon {
+    @apply w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300;
+    background: linear-gradient(135deg, hsl(220 20% 12%) 0%, hsl(220 20% 15%) 100%);
+    border: 1px solid hsl(220 20% 25% / 0.5);
+  }
+
+  .social-icon:hover {
+    @apply border-primary/50 -translate-y-1;
+    box-shadow: 0 10px 30px hsl(192 95% 55% / 0.2);
+  }
+
+  /* Navigation */
+  .nav-link {
+    @apply relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors duration-300;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 w-0 h-0.5 rounded-full transition-all duration-300;
+    background: linear-gradient(90deg, hsl(192 95% 55%), hsl(260 80% 65%));
+    transform: translateX(-50%);
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .nav-link.active {
+    @apply text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Animations */
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { 
+      opacity: 1;
+      box-shadow: 0 0 20px hsl(192 95% 55% / 0.4);
+    }
+    50% { 
+      opacity: 0.8;
+      box-shadow: 0 0 40px hsl(192 95% 55% / 0.6);
+    }
+  }
+
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: hsl(192 95% 55%); }
+  }
+
+  @keyframes particle-float {
+    0%, 100% { 
+      transform: translateY(0) translateX(0);
+      opacity: 0.3;
+    }
+    25% { 
+      transform: translateY(-30px) translateX(10px);
+      opacity: 0.6;
+    }
+    50% { 
+      transform: translateY(-50px) translateX(-10px);
+      opacity: 0.3;
+    }
+    75% { 
+      transform: translateY(-30px) translateX(15px);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-gradient {
+    animation: gradient-shift 3s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  /* Delay utilities */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+  .delay-600 { animation-delay: 600ms; }
+}
