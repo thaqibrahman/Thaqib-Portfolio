@@ -17,6 +17,18 @@ const experiences = [
   },
   {
     role: "AI Developer Intern",
+    company: "Viswam.AI (IIIT Hyderabad)",
+    location: "Hyderabad, India",
+    duration: "2025",
+    description: [
+      "Worked on AI solution development for industry-specific problems",
+      "Gained hands-on experience with TensorFlow and PyTorch",
+      "Participated in code reviews and agile development practices",
+    ],
+    type: "Internship",
+  },
+  {
+    role: "AI Developer Intern",
     company: "Swecha (IIIT Hyderabad)",
     location: "Hyderabad, India",
     duration: "May - June 2024",
@@ -36,18 +48,6 @@ const experiences = [
       "Built and trained machine learning models for real-world classification tasks",
       "Implemented data preprocessing pipelines using Pandas and NumPy",
       "Deployed ML models using Flask for API-based predictions",
-    ],
-    type: "Internship",
-  },
-  {
-    role: "AI Developer Intern",
-    company: "Viswam.AI (IIIT Hyderabad)",
-    location: "Hyderabad, India",
-    duration: "2025",
-    description: [
-      "Worked on AI solution development for industry-specific problems",
-      "Gained hands-on experience with TensorFlow and PyTorch",
-      "Participated in code reviews and agile development practices",
     ],
     type: "Internship",
   },
