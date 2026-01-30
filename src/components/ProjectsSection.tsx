@@ -43,6 +43,29 @@ const projects = [
     image: "web",
     gradient: "from-orange-500/20 to-yellow-500/20",
   },
+  // ✅ NEW PROJECT 1
+  {
+    title: "ML Based - Movie Recommendation System",
+    role: "Machine Learning Developer",
+    description:
+      "Machine learning based movie recommendation system that suggests movies to users based on similarity and user preferences using collaborative filtering techniques.",
+    tech: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+    github: "https://github.com/thaqibrahman/Movie-Recommendation-System",
+    image: "ml",
+    gradient: "from-indigo-500/20 to-violet-500/20",
+  },
+
+  // ✅ NEW PROJECT 2
+  {
+    title: "ML Based - Iris Classification Project",
+    role: "Machine Learning Developer",
+    description:
+      "Classification model built using machine learning algorithms to predict iris flower species based on sepal and petal dimensions using the famous Iris dataset.",
+    tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+    github: "https://github.com/thaqibrahman/ML-Based---Iris-Classification",
+    image: "ml",
+    gradient: "from-teal-500/20 to-cyan-500/20",
+  },
 ];
 
 const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
