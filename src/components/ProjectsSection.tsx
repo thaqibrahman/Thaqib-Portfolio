@@ -4,12 +4,12 @@ import { ExternalLink, Github, Eye } from "lucide-react";
 
 const projects = [
   {
-    title: "AI Virtual Mouse",
+    title: "AI Virtual Mouse Using Hand Gesture Recognition",
     role: "Solo Developer",
     description:
       "Hand gesture recognition system using computer vision that enables touchless computer control. Published research in IRJAEH journal.",
     tech: ["Python", "OpenCV", "MediaPipe", "PyAutoGUI"],
-    github: "https://github.com/thaqibrahman",
+    github: "https://github.com/thaqibrahman/AI-Virtual-Mouse",
     image: "cv",
     gradient: "from-cyan-500/20 to-blue-500/20",
   },
@@ -19,7 +19,7 @@ const projects = [
     description:
       "Intelligent system that recommends medicines based on symptoms using machine learning algorithms and Flask backend.",
     tech: ["Python", "Flask", "Scikit-learn", "Pandas"],
-    github: "https://github.com/thaqibrahman",
+    github: "https://github.com/thaqibrahman/Medicine-Recommendation-System",
     image: "ml",
     gradient: "from-purple-500/20 to-pink-500/20",
   },
@@ -29,7 +29,7 @@ const projects = [
     description:
       "Custom-built portable hacking station using Raspberry Pi for security testing and penetration testing workflows.",
     tech: ["Raspberry Pi", "Linux", "Python", "Networking"],
-    github: "https://github.com/thaqibrahman",
+    github: "https://github.com/thaqibrahman/Retronex-Cyberdeck",
     image: "security",
     gradient: "from-green-500/20 to-emerald-500/20",
   },
@@ -39,7 +39,7 @@ const projects = [
     description:
       "Full-featured e-commerce platform with user authentication, product management, cart functionality and payment integration using modern web technologies.",
     tech: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/thaqibrahman",
+    github: "https://github.com/thaqibrahman/E-Commerce-Web-Application",
     image: "web",
     gradient: "from-orange-500/20 to-yellow-500/20",
   },
