@@ -19,7 +19,7 @@ const experiences = [
     role: "AI Developer Intern",
     company: "Swecha (IIIT Hyderabad)",
     location: "Hyderabad, India",
-    duration: "2024",
+    duration: "May - June 2024",
     description: [
       "Developed AI-powered applications using Python and deep learning frameworks",
       "Collaborated with senior engineers on computer vision and NLP projects",
@@ -31,7 +31,7 @@ const experiences = [
     role: "Machine Learning Intern",
     company: "Bharat Intern",
     location: "Remote",
-    duration: "2023",
+    duration: "Nov - Dec 2023",
     description: [
       "Built and trained machine learning models for real-world classification tasks",
       "Implemented data preprocessing pipelines using Pandas and NumPy",
@@ -43,7 +43,7 @@ const experiences = [
     role: "AI Developer Intern",
     company: "Viswam.AI (IIIT Hyderabad)",
     location: "Hyderabad, India",
-    duration: "2023",
+    duration: "2025",
     description: [
       "Worked on AI solution development for industry-specific problems",
       "Gained hands-on experience with TensorFlow and PyTorch",
