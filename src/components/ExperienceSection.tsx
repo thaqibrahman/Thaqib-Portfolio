@@ -14,7 +14,7 @@ const experiences = [
       "Collaborating with cross-functional teams on AI-driven projects",
     ],
     type: "Current",
-    logo: "./public/People Tech Group.jpg",
+    logo: "/People Tech Group.jpg",
   },
   {
     role: "MERN Stack Intern",
@@ -27,7 +27,7 @@ const experiences = [
       "Focused on delivering a seamless and responsive user experience",
     ],
     type: "Internship",
-    logo: "./public/EY.png",
+    logo: "/EY.png",
   },
   {
     role: "AI Developer Intern",
@@ -40,7 +40,7 @@ const experiences = [
       "Contributed to open-source AI initiatives and research prototypes",
     ],
     type: "Internship",
-    logo: "./public/Swecha.jpg",
+    logo: "/Swecha.jpg",
   },
 ];
 
