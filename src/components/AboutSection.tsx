@@ -56,13 +56,12 @@ const AboutSection = () => {
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm <span className="text-foreground font-semibold">Mohammed Thaqib Ul Rahman</span>, 
-              a passionate AI/ML Engineer and Full-Stack Developer pursuing B.Tech in Computer Science 
-              (AI & ML specialization) at Sphoorthy Engineering College.
+              a passionate AI/ML Engineer and Full-Stack Enthusiast, and a B.Tech graduate in <span className="text-primary">Computer Science and Engineering (AI & ML specialization)</span> from Sphoorthy Engineering College.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               My journey in tech is driven by a deep curiosity for how machines can learn and adapt. 
-              From building intelligent systems using <span className="text-primary">computer vision</span> and 
-              <span className="text-primary"> natural language processing</span> to crafting scalable web applications, 
+              From building intelligent systems using <span className="text-primary">Computer Vision</span> and 
+              <span className="text-primary"> Natural Language Processing</span> to crafting scalable web applications, 
               I love bridging the gap between cutting-edge research and practical solutions.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
