@@ -14,18 +14,20 @@ const experiences = [
       "Collaborating with cross-functional teams on AI-driven projects",
     ],
     type: "Current",
+    logo: "./public/People Tech Group.jpg",
   },
   {
-    role: "AI Developer Intern",
-    company: "Viswam.AI (IIIT Hyderabad)",
+    role: "MERN Stack Intern",
+    company: "NextGen Edunet Foundation X EY",
     location: "Hyderabad, India",
-    duration: "2025",
+    duration: "March - April 2025",
     description: [
-      "Worked on AI solution development for industry-specific problems",
-      "Gained hands-on experience with TensorFlow and PyTorch",
-      "Participated in code reviews and agile development practices",
+      "Built a dynamic e-commerce web application using the MERN stack",
+      "Implemented user authentication and efficient product management",
+      "Focused on delivering a seamless and responsive user experience",
     ],
     type: "Internship",
+    logo: "./public/EY.png",
   },
   {
     role: "AI Developer Intern",
@@ -38,18 +40,7 @@ const experiences = [
       "Contributed to open-source AI initiatives and research prototypes",
     ],
     type: "Internship",
-  },
-  {
-    role: "Machine Learning Intern",
-    company: "Bharat Intern",
-    location: "Remote",
-    duration: "Nov - Dec 2023",
-    description: [
-      "Built and trained machine learning models for real-world classification tasks",
-      "Implemented data preprocessing pipelines using Pandas and NumPy",
-      "Deployed ML models using Flask for API-based predictions",
-    ],
-    type: "Internship",
+    logo: "./public/Swecha.jpg",
   },
 ];
 
@@ -60,7 +51,7 @@ const ExperienceCard = ({ experience, index, isEven }: { experience: typeof expe
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: index * 0.15 }}
       viewport={{ once: true }}
-      className={`flex flex-col md:flex-row gap-8 ${isEven ? "md:flex-row-reverse" : ""}`}
+      className="flex flex-col md:flex-row gap-8"
     >
       {/* Timeline dot - Mobile */}
       <div className="flex md:hidden items-start gap-4">
@@ -83,7 +74,7 @@ const ExperienceCard = ({ experience, index, isEven }: { experience: typeof expe
         <div className="timeline-dot" />
       </div>
 
-      <div className="hidden md:flex flex-1">
+      <div className="hidden md:flex flex-1 justify-start">
         {isEven && <ExperienceContent experience={experience} />}
       </div>
     </motion.div>
@@ -93,12 +84,26 @@ const ExperienceCard = ({ experience, index, isEven }: { experience: typeof expe
 const ExperienceContent = ({ experience }: { experience: typeof experiences[0] }) => (
   <div className="glass-card p-6 max-w-lg w-full card-3d">
     <div className="flex items-start justify-between mb-4">
-      <div>
-        <h3 className="text-xl font-bold text-foreground">{experience.role}</h3>
-        <p className="text-primary font-medium">{experience.company}</p>
-      </div>
-      <span className="tech-badge text-xs">{experience.type}</span>
+  <div className="flex items-center gap-3">
+    <img
+      src={experience.logo}
+      alt={experience.company}
+      className="w-10 h-10 object-contain"
+    />
+
+    <div>
+      <h3 className="text-xl font-bold text-foreground">
+        {experience.role}
+      </h3>
+      <p className="text-primary font-medium">
+        {experience.company}
+      </p>
     </div>
+  </div>
+
+  <span className="tech-badge text-xs">{experience.type}</span>
+</div>
+
 
     <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
       <span className="flex items-center gap-1">

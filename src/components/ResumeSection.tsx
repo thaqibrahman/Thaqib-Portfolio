@@ -38,14 +38,14 @@ const ResumeSection = () => {
         </motion.div>
 
         {/* Highlights */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-2 gap-6 mb-12 w-fit mx-auto">
           {highlights.map((item, index) => (
             <motion.div
               key={item.title}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
-              className="glass-card p-6 text-center card-3d"
+              className="glass-card p-6 text-center card-3d min-w-[360px] md:min-w-[420px]"
             >
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <item.icon className="w-7 h-7 text-primary" />
@@ -75,7 +75,7 @@ const ResumeSection = () => {
                   Mohammed Thaqib Ul Rahman
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  AI/ML Engineer & Full Stack Developer
+                  AI/ML Engineer & Full Stack Enthusiast
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center gap-3">
