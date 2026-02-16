@@ -133,7 +133,7 @@ const PublicationsSection = () => {
               <h3 className="text-xl font-bold text-foreground">Publications</h3>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-4 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 gap-4 max-w-3xl mx-auto">
               {publications.map((pub, index) => (
                 <motion.div
                   key={pub.title}
