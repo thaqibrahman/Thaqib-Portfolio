@@ -14,7 +14,7 @@ const skillCategories = [
   {
     title: "Programming Languages",
     icon: Code2,
-    skills: ["Python", "C", "Java", "R", "JavaScript", "TypeScript"],
+    skills: ["Python", "C", "Java", "R", "JavaScript"],
     color: "from-blue-500 to-cyan-500",
   },
   {
@@ -38,19 +38,19 @@ const skillCategories = [
   {
     title: "Databases",
     icon: Database,
-    skills: ["MySQL", "MongoDB", "PostgreSQL", "Firebase"],
+    skills: ["MySQL", "MongoDB", "PostgreSQL"],
     color: "from-red-500 to-rose-500",
   },
   {
     title: "Tools & Platforms",
     icon: Wrench,
-    skills: ["Git", "GitHub", "AWS", "Google Colab", "VS Code", "Linux", "Docker"],
+    skills: ["Git", "GitHub", "AWS", "Google Colab", "VS Code", "Linux", "Docker", "Cursor"],
     color: "from-indigo-500 to-violet-500",
   },
   {
     title: "Soft Skills",
     icon: Users,
-    skills: ["Problem Solving", "Team Collaboration", "Communication", "Critical Thinking", "Adaptability"],
+    skills: ["Problem Solving", "Leadership", "Team Collaboration", "Communication", "Emotional Intelligence", "Empathy", "Critical Thinking", "Adaptability"],
     color: "from-teal-500 to-cyan-500",
   },
 ];
