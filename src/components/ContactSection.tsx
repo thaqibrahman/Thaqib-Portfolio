@@ -34,7 +34,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-20 md:py-32 relative">
       {/* Background */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[200px]" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[200px] pointer-events-none" />
 
       <div className="container mx-auto px-4" ref={ref}>
         <motion.div
@@ -53,7 +53,7 @@ const ContactSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
             onSubmit={handleSubmit}
-            className="glass-card p-8"
+            className="glass-card p-8 relative z-10"
           >
             {/* Name Field */}
             <div className="mb-6">
