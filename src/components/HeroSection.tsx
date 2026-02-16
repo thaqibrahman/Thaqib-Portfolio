@@ -80,10 +80,14 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-3xl sm:text-4xl md:text-6xl lg:text-7x1 font-bold mb-6 text-center whitespace-nowrap"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-center"
           >
-            <span className="text-foreground gradient-text">Mohammed Thaqib&nbsp;</span>
-            <span className="gradient-text">Ul Rahman</span>
+            <span className="text-foreground gradient-text block sm:inline">
+              Mohammed Thaqib{" "}
+            </span>
+            <span className="gradient-text block sm:inline">
+              Ul Rahman
+            </span>
           </motion.h1>
 
           {/* Typewriter Role */}
