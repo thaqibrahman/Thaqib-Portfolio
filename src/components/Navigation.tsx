@@ -59,7 +59,7 @@ const Navigation = () => {
             : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <motion.a
@@ -91,7 +91,7 @@ const Navigation = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 text-foreground"
+              className="md:hidden p-2 text-foreground flex-shrink-0"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
