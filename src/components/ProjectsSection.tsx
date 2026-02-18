@@ -5,7 +5,7 @@ import { ExternalLink, Github, Eye } from "lucide-react";
 const projects = [
   {
     title: "AI Virtual Mouse Using Hand Gesture Recognition",
-    role: "Solo Developer",
+    role: "Computer Vision Engineer",
     description:
       "Hand gesture recognition system using computer vision that enables touchless computer control. Published research in IRJAEH journal.",
     tech: ["Python", "OpenCV", "MediaPipe", "PyAutoGUI"],
