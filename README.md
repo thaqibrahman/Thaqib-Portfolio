@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website built to showcase my projects, t
 
 ## 🌐 Live Portfolio
 
-<p>
+<p align="center">
   <a href="https://thaqib-portfolio-42dz.vercel.app/">
     <img src="https://img.shields.io/badge/View%20Portfolio-blue?style=for-the-badge" alt="Open Portfolio"/>
   </a>
