@@ -16,12 +16,14 @@ A modern, responsive personal portfolio website built to showcase my projects, t
 
 ## 🛠️ Tech Stack
 
-- **Frontend Framework:** React.js  
-- **Language:** TypeScript  
-- **Build Tool:** Vite  
-- **Styling:** Tailwind CSS  
-- **UI Components:** shadcn/ui  
-- **Deployment:** Vercel  
+| Category             | Technology     |
+|----------------------|----------------|
+| Frontend Framework   | React.js       |
+| Language             | TypeScript     |
+| Build Tool           | Vite           |
+| Styling              | Tailwind CSS   |
+| UI Components        | shadcn/ui      |
+| Deployment           | Vercel         |
 
 ---
 
