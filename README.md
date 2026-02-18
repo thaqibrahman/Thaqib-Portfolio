@@ -63,7 +63,7 @@ The project is deployed using **Vercel**, enabling:
 ## 👤 Author
 
 **Mohammed Thaqib ul Rahman**  
-AI & ML Graduate | Frontend & Machine Learning Enthusiast  
+AI & ML Engineer | Frontend & Machine Learning Enthusiast  
 
 ---
 
