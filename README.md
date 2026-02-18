@@ -8,7 +8,7 @@ A modern, responsive personal portfolio website built to showcase my projects, t
 
 <p>
   <a href="https://thaqib-portfolio-42dz.vercel.app/">
-    <img src="https://img.shields.io/badge/View%20Portfolio-black?style=for-the-badge" alt="Open Portfolio"/>
+    <img src="https://img.shields.io/badge/View%20Portfolio-111827?style=for-the-badge&logo=vercel&logoColor=A855F7" alt="Open Portfolio"/>
   </a>
 </p>
 
