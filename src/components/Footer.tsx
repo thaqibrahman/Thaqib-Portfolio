@@ -53,16 +53,7 @@ const Footer = () => {
             ))}
           </div>
 
-          {/* Contact Info */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 text-sm text-muted-foreground">
-            <a href="mailto:thaqibrahman@gmail.com" className="hover:text-primary transition-colors">
-              thaqibrahman@gmail.com
-            </a>
-            <span className="hidden sm:inline text-border">|</span>
-            <a href="tel:+919390084918" className="hover:text-primary transition-colors">
-              +91 9390084918
-            </a>
-          </div>
+
 
           {/* Copyright */}
           <motion.div
