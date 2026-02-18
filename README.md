@@ -1,118 +1,72 @@
-🌐 Personal Portfolio Website
+# 🚀 Personal Portfolio Website
 
-This is my personal portfolio website built to showcase my skills, projects, and experience as a developer.
-The portfolio is fully responsive, modern, and designed with a clean UI to highlight my work effectively.
+A modern, responsive personal portfolio website built to showcase my projects, technical skills, and professional background in Artificial Intelligence, Machine Learning, and Web Development.
 
-🚀 Features
+---
 
-Responsive design (works on desktop, tablet, and mobile)
+## 🌐 Live Portfolio
 
-Clean and modern UI
+<p align="center">
+  <a href="https://thaqib-portfolio-42dz.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/View%20Live%20Portfolio-Click%20Here-blue?style=for-the-badge" alt="View Portfolio"/>
+  </a>
+</p>
 
-Smooth animations and transitions
+---
 
-Projects section with details
+## 🛠️ Tech Stack
 
-Skills and technologies showcase
+- **Frontend Framework:** React.js  
+- **Language:** TypeScript  
+- **Build Tool:** Vite  
+- **Styling:** Tailwind CSS  
+- **UI Components:** shadcn/ui  
+- **Deployment:** Vercel  
 
-Contact section with easy reach
+---
 
-Fast performance and optimized assets
+## ✨ Features
 
-🛠️ Tech Stack
+- ⚡ Fast and lightweight performance using Vite  
+- 🌙 Modern dark-themed user interface  
+- 📱 Fully responsive across desktop, tablet, and mobile devices  
+- 🧩 Modular and reusable component-based architecture  
+- 📂 Dedicated sections for:
+  - Projects  
+  - Skills  
+  - Experience  
+  - Contact information  
 
-Frontend: HTML, CSS, JavaScript
+---
 
-Framework / Tooling: Node.js, npm
+## 📌 Purpose
 
-Styling: Custom CSS (modern design system)
+This portfolio serves as a central hub to present:
+- My technical projects  
+- My development skills  
+- My academic and professional journey  
+- Easy access to my work and contact details  
 
-Version Control: Git & GitHub
+It is designed with a clean and minimal UI to ensure clarity, usability, and performance.
 
-📂 Project Structure
-portfolio/
-├── public/
-│   └── assets/
-├── src/
-│   ├── components/
-│   ├── styles/
-│   └── scripts/
-├── index.html
-├── package.json
-└── README.md
+---
 
+## 🚀 Deployment
 
-(Structure may vary slightly based on updates and improvements.)
+The project is deployed using **Vercel**, enabling:
+- Continuous deployment from GitHub  
+- Fast global CDN delivery  
+- Secure and reliable hosting  
 
-⚙️ Installation & Setup
+---
 
-Follow these steps to run the project locally:
+## 👤 Author
 
-# Clone the repository
-git clone https://github.com/your-username/your-portfolio-repo.git
+**Mohammed Thaqib ul Rahman**  
+AI & ML Graduate | Frontend & Machine Learning Enthusiast  
 
-# Navigate to the project folder
-cd your-portfolio-repo
+---
 
-# Install dependencies
-npm install
+## 📄 License
 
-# Start the development server
-npm start
-
-
-Once running, open your browser and visit:
-
-http://localhost:3000
-
-
-(Port may vary depending on your setup.)
-
-🧹 Customization
-
-You can easily customize this portfolio by:
-
-Updating personal details in index.html
-
-Adding or modifying projects in the Projects section
-
-Editing colors, fonts, and layout in the CSS files
-
-Updating scripts for interactivity and animations
-
-📸 Preview
-
-Add screenshots or a live demo link here once deployed.
-
-Example:
-
-Live Demo: https://your-portfolio-link.com
-
-📌 Future Improvements
-
-Add dark/light mode toggle
-
-Improve animations using GSAP or Framer Motion
-
-Add blog section
-
-Integrate backend for contact form
-
-SEO optimizations
-
-🤝 Contributing
-
-This is a personal project, but suggestions and improvements are always welcome.
-Feel free to fork the repository and experiment.
-
-📄 License
-
-This project is licensed under the MIT License – feel free to use and modify it.
-
-👤 Author
-
-Mohammed Thaqib Ul Rahman
-
-GitHub: https://github.com/your-username
-
-LinkedIn: https://linkedin.com/in/your-profile
+This project is open-source and available for personal and educational use.
